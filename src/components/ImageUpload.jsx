@@ -17,7 +17,7 @@ export default function ImageUpload({ variant }) {
   };
 
   return (
-    <div className={`flex flex-col gap-4 items-center w-full sm:ml-40 sm:max-w-sm max-w-full`}>
+    <div className={`flex flex-col mx-auto gap-4 items-center w-full sm:max-w-sm max-w-full`}>
       <img
         src={image}
         alt="T-shirt print preview"

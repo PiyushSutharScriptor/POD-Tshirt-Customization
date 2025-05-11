@@ -8,7 +8,7 @@ export default function TextInputArea({ variant }) {
   const inputClass = `input-${variant} w-full resize-none h-32`;
 
   return (
-    <div className={`w-full max-w-md form-section-${variant}`}>
+    <div className={`w-full max-w-md mx-auto mt-4 form-section-${variant}`}>
       <h2 className="text-xl font-semibold mb-2">T-shirt Text (max 3 lines)</h2>
       <textarea
         {...register("printText")}

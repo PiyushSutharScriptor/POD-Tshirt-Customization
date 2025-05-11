@@ -7,7 +7,7 @@ export default function FormSection({ variant }) {
   const inputClass = `input-${variant} w-full`;
 
   return (
-    <div className={`flex flex-col gap-4 w-full sm:max-h-96 max-w-md ${sectionClass}`}>
+    <div className={`flex flex-col gap-4 w-full mx-auto sm:max-h-96 max-w-md ${sectionClass}`}>
       <h2 className="text-xl font-semibold">Your Measurements</h2>
 
       <label className="text-sm font-medium">Height (cm)</label>

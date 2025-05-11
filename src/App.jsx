@@ -49,7 +49,7 @@ function App() {
       <FormProvider {...methods}>
         <form
           onSubmit={methods.handleSubmit(onSubmit)}
-          className={`w-full max-w-6xl sm:max-w-[1400px] rounded-lg p-6 flex flex-col gap-6 md:flex-row flex-wrap shadow-lg bg-gray-300 variant-${variant}`}
+          className={`w-full max-w-full sm:max-w-full rounded-lg p-6 flex flex-col gap-6 md:flex-row flex-wrap shadow-lg bg-gray-300 variant-${variant}`}
            style={{
                 boxShadow: "0 0 15px 4px rgba(0, 119, 255, 2.5)",
           }}
@@ -57,7 +57,10 @@ function App() {
           <FormSection variant={variant} />
           <ImageUpload variant={variant} />
           <TextInputArea variant={variant} />
+          <div className="w-full">
+
         <Footer />
+          </div>
         </form>
         <VariantSwitcher variant={variant} />
       </FormProvider>
